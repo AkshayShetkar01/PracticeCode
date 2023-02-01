@@ -1,0 +1,19 @@
+@use "sass:map";
+.btn {
+  border-radius: 5px;
+  font-size: 1rem;
+  background: pink;
+}
+
+.btn-primary {
+  border-radius: 5px;
+  font-size: 1rem;
+  background: RoyalBlue;
+}
+
+.btn-secondary {
+  border-radius: 5px;
+  font-size: 1rem;
+  background: red;
+}
+/*# sourceMappingURL=style.css.map */

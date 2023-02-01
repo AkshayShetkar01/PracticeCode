@@ -1,0 +1,14 @@
+@mixin btn($col:#1d5383, $col2:#9aa3a3){
+    background:$col;
+    border-radius:5px;
+    color : $col2;
+}
+
+.btn{
+    @include btn;
+}
+
+.btn-primary {
+    @include btn(red,blue);
+    // color:yellow;
+}

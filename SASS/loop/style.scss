@@ -1,0 +1,26 @@
+@use "sass:map";
+
+$buttons : (
+    "-primary" (
+    RoyalBlue,
+    #3ab5e9
+    ),
+     "-secondary" (
+    red,
+    yellow
+    ),
+);
+
+@mixin btn($name: "", $bg: pink, $col: white)
+{
+    .btn#{$name} {
+        border-radius:5px;
+        font-size:1rem;
+        background:$bg;
+    }
+}
+
+@include btn("");
+@each $key, $values in $buttons {
+    @include btn($key, $values...);
+}

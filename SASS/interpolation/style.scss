@@ -1,0 +1,23 @@
+@mixin interpolation($changeable, $val, $val2, $prop1, $prop2)
+{
+    text-#{$changeable}: $val;
+    position: $val2;
+    #{$prop1}: 50px; 
+    #{$prop2}: 50px;
+}
+
+@mixin fontChange($val1 , $val2 ){
+    font-#{$val1} : $val2;
+}
+
+p{
+    @include fontChange("size",50px )
+}
+
+p{
+    @include interpolation("align", center, absolute, top, right);
+}
+
+button{
+    @include interpolation("float", center, absolute, top, left);
+}
