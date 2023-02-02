@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,QAAwB;AAExB,WAAwB;AAExB,cAAgC;AAChC,oCAAsC;AACtC,aAAoC",
+    "sources": [
+        "array.scss"
+    ],
+    "names": [],
+    "file": "array.css"
+}

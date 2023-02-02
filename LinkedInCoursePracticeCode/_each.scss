@@ -1,0 +1,14 @@
+@mixin btn($name: "" , $bg: #456 , $col: white) {
+    .btn#{$name} {
+        background: $bg;
+        color : $col;
+    }
+}
+
+$buttons :
+    -primary #345654 hotpink,
+    -secondary red yellow;
+
+@each $name, $bg , $col in $buttons {
+    @include btn($name , $bg ,$col)
+}

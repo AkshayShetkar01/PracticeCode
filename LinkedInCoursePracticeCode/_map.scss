@@ -1,0 +1,26 @@
+@use "sass:map";
+
+$colorList : (
+    "primary" : red,
+    "secondary" : blue,
+    "accent" : YellowGreen
+);
+
+$buttons: (
+    "-primary" : (royalBlue ,#979595),
+    "-secondary" : (tomato ,#d6cece)
+);
+
+@include btn("");
+@mixin btn($name: "" , $bg: rgb(160, 160, 160) , $col: white) {
+    .btn#{$name} {
+        background: $bg;
+        color : $col;
+    }
+}
+
+@include btn(""); 
+
+@each $key ,$values in buttons {
+    @include btn($key, $values...)
+}

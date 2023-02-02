@@ -1,0 +1,8 @@
+$myArray : dell hp apple lenovo "new tech";
+/* #{nth($myArray,2)} */
+$myArray1 : dell, hp, apple, lenovo, "new tech";
+/* #{nth($myArray,3)} */
+
+/*length : #{length($myArray)}*/
+/*#{set-nth($myArray , 2 , "asus")} */
+/*index : #{index($myArray,apple)}*/

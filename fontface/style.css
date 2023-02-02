@@ -1,0 +1,31 @@
+@font-face {
+    font-family: myFont;
+    src: url(./fonts/Quicksand-Regular.otf);
+}
+
+@font-face {
+    font-family: halvetica ;
+    src: url(./fonts/Quicksand-Bold.otf) format("opentype") , local("arial") ;
+}
+
+h1{
+    font-family: myFont;
+    padding: 10px;
+}
+
+/* changed font */
+.para1 {
+    font-family: myFont;
+    padding: 10px;
+}
+
+/* to show normal font */
+.para2 {
+    padding: 10px;
+}
+
+/* different style */
+.para3 {
+    font-family: halvetica ;
+    padding: 10px;
+}

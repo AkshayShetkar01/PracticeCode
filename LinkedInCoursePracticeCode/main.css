@@ -1,0 +1,37 @@
+.btn-primary {
+  background: #345654;
+  color: hotpink;
+}
+
+.btn-secondary {
+  background: red;
+  color: yellow;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+@use "sass:map";
+.btn {
+  background: #456;
+  color: white;
+}
+
+.btn {
+  background: #a0a0a0;
+  color: white;
+}
+
+.btnbuttons {
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
