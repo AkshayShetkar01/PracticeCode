@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>This is storage tutorial</h1>
+    <div>
+        <h3>This will be stored in local storage </h3>
+        <div>
+            <label for="">Enter Name</label>
+            <input id="lName" type="text">
+        </div>
+        <div>
+            <label for="">Enter branch</label>
+            <input id="branch" type="text">
+        </div>
+        <div>
+            <p>Data will be stored in localstorage even if you close the browser or laptop . You have to clear it explicitely </p>
+        </div>
+        <div>
+            <button onclick="saveToLocalStorage()">Store</button>
+        </div>
+        <div>
+            <button onclick="clearLocalStorage()">Clear Local Storage</button>
+        </div>
+    </div>
+    <div>
+        <h3>This will be stored in session storage</h3>
+        <div>
+            <label for="">Enter Name</label>
+            <input id="sName" type="text">
+        </div>
+        <div>
+            <label for="">Enter city</label>
+            <input id="city" type="text">
+        </div>
+        <div>
+            <p>Even if you reload or refresh, data remains in session storage</p>
+        </div>
+        <div>
+            <button onclick="saveToSessionStorage()">Store</button>
+        </div>
+    </div>   
+    <div>
+        <button onclick="clearSessionStorage()">Clear Session Storage</button>
+    </div>
+
+<script src="./script.js"></script>
+</body>
+
+</html>
