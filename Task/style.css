@@ -1,0 +1,76 @@
+@use "sass:map";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #979694;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .box {
+  background-color: #b4adf0;
+  border-radius: 10px;
+  width: 60%;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+
+.container .box .para {
+  padding: 2rem;
+}
+
+.container .box .buttons {
+  margin-left: 2rem;
+}
+
+.container .box .buttons button {
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+
+.container .box .buttons .btn-primary {
+  background-color: #ffb980;
+}
+
+.container .box .buttons .btn-secondary {
+  background-color: #bdff97;
+}
+
+.container .box .buttons .btn-success {
+  background-color: #82c7ff;
+}
+
+.container .box .buttons .btn-primary {
+  background-color: #8bd4ff;
+}
+
+.container .box .buttons .btn-secondary {
+  background-color: #ffc582;
+}
+
+.container .box .buttons .btn-success {
+  background-color: #81ff81;
+}
+
+.container .box .buttons .btn-primary:hover {
+  background-color: #00a2ff;
+}
+
+.container .box .buttons .btn-secondary:hover {
+  background-color: #ff8800;
+}
+
+.container .box .buttons .btn-success:hover {
+  background-color: #00ff00;
+}
+/*# sourceMappingURL=style.css.map */
