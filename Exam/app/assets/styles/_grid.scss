@@ -1,0 +1,53 @@
+@mixin flexRow {
+    display: flex;
+    margin: $spacing-half $spacing;
+    align-items: center;
+}
+
+.container {
+    &-themeChange {
+        @include flexRow();
+    }
+
+    &-timeFormat {
+        @include flexRow();
+
+        &-select {
+            @include flexRow();
+        }
+    }
+
+    &-controls {
+        @include flexRow();
+    }
+
+    &-timeSelection {
+        @include flexRow(); 
+
+        & div{
+            display: flex;
+            align-items: center;
+            margin-right: $spacing;
+
+            *{
+                margin-right: $spacing-half;
+            }
+        }
+    }
+
+    &-displayTime {
+        margin: $spacing-half $spacing;
+    }
+
+    &-getData {
+        margin: $spacing-half $spacing;
+
+        .loading {
+            @include flexRow(); 
+            width: 40%;
+            justify-content: center;
+        }
+        
+        
+    }
+}

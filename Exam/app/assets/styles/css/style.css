@@ -1,0 +1,219 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading{
+    margin: 0.5rem;
+}
+
+h1{
+    font-style: italic;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+.themeChange{
+    margin: 0.5rem 1rem;
+}
+
+.themeChange-btn {
+    background-color: #e7e7e7; 
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px; 
+    border: none;
+    box-shadow: 1px 1px #888888;
+}
+
+.controls-load {
+    background-color: #e7e7e7;  
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px #888888;
+}
+
+.controls-clear {
+    background-color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    /*box-shadow: 1px 1px #888888;*/
+}
+
+.timeFormat{
+    display: flex;
+    margin: 0.5rem 1rem;
+}
+
+.timeFormat-select{
+    display: flex;
+}
+
+.timeFormat-select div{
+    margin-right: 1rem;
+    
+}
+
+.timeFormat-head{
+    margin-right: 1rem;
+}
+
+.controls{
+    display: flex;
+    margin: 0.5rem 1rem;
+}
+
+.controls button{
+    margin-right: 1rem;
+}
+
+.timeSelection{
+    display: flex;
+    margin: 0.5rem 1rem;
+}
+
+.timeSelection div{
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.timeSelection div select{
+    padding: 0.5rem;
+}
+
+.timeSelection div *{
+    margin-right: 0.5rem;    
+}
+
+.displayTime{
+    margin: 0.5rem 1rem;
+}
+
+.displayTime-btn  {
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    color: #6f7e8f ;
+    box-shadow: 1px 1px #888888;
+}
+
+#msg{
+    margin: 0.5rem 1rem;
+    animation: trans 2s;
+    animation-iteration-count: infinite;
+}
+
+.result-msg{
+    animation: trans 5s;
+}
+
+/* loading */
+
+.loadData {
+    margin: 0.5rem 1rem;
+}
+
+.load-btn{
+    background-color: #e7e7e7;  
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px #888888;
+}
+
+.data-table{
+    margin: 2rem 1rem;
+
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+
+th, td {
+    padding: 15px 25px;
+}
+
+
+/* dark theme */
+
+.dark , .dark .controls-load  , .dark .themeChange-btn , .dark .timeSelection div select{
+    color: #fff;
+    background-color: #002f65;
+}
+
+.dark .controls-load  , .dark .themeChange-btn , .dark .timeSelection div select{
+    border: #fff 1px solid;
+}
+
+.dark .svg-fill {
+    fill:#fff;
+}
+
+.dark .controls-clear{
+    border: #002f65 1px solid;
+    color: #002f65;
+    background-color: #fff;
+}
+
+.dark .displayTime-btn{
+    background-color: #6f7e8f;
+    border: #fff 1px  solid;
+    color: #fff;
+}
+
+
+@keyframes trans {
+    0%   {color:red}
+    25%  {color:yellow }
+    50%  {color:blue }
+    75%  {color:green }
+    100% {color:red }
+}
+
+@media only screen and (max-width: 476px) {
+   
+    .timeFormat-select{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .controls{
+        flex-direction: column;
+    }
+
+    .controls div{
+        margin: 0.4rem auto;
+        width: 100%;
+    }
+
+    .controls div button{
+        width: 100%;
+    }
+
+    .timeSelection{
+        flex-direction: column;
+    }
+
+    .timeSelection div{
+        margin: 0.4rem 0;
+    }
+
+}
+
+
+
+
+
+
+

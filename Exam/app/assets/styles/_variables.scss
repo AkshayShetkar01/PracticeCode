@@ -1,0 +1,63 @@
+// colors
+$black : #000;
+$white : #fff;
+$blue-dark : #002f65;
+$grey-light :#e7e7e7;
+
+$table-strip-color-dark : #00008b ;
+$table-strip-color-light : #c0c1c2 ;
+
+
+$table-strip-color-dark-2 : #990011FF ;
+$table-strip-color-light-2 : #FCF6F5FF ;
+
+// box-sizing 
+$divMargin : 2rem ;
+$buttonPadding : 1.5rem 2rem;
+$full-width : 100%;
+
+//font-size
+$font-size : 16px;
+$font-size-sm : 12px;
+$font-size-xs : 8px;
+$font-size-lg : 20px;
+
+// Fonts: Weights
+$font-regular: 400;
+$font-semi-bold: 600;
+$font-bold: 700;
+
+// Media Queries: Min-width
+$media-lg: 1200px;
+$media-mid: 900px;
+$media-sm: 476px;
+
+// VARIABLES: BORDER RADIUS
+$border-radius: 5px;
+
+
+// VARIABLES: SPACING
+
+$spacing: 16px;
+$spacing-2: ($spacing * 2);
+$spacing-3: ($spacing * 3);
+$spacing-half: ($spacing / 2);
+
+// VARIABLES: BUTTONS
+
+$btn-padding-v: 0.5rem;
+$btn-padding-h: 1rem;
+
+// VARIABLES: table
+
+$tbl-padding-v: 0.5rem;
+$tbl-padding-h: 1rem;
+
+// VARIABLES: BOX SHADOW
+
+$box-shadow: 0px 4px 10px rgba($black, 0.1);
+
+// VARIABLES: TRANSITIONS
+
+$transition-linear: all 0.2s linear;
+$transition-ease-in: all 0.2s ease-in;

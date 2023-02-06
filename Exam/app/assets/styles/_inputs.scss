@@ -1,0 +1,11 @@
+.container{
+    &-timeSelection {
+        select {
+            padding: $spacing-half;
+        }
+    }
+
+    &-timeFormat-select div{
+        margin-right: $spacing;
+    }
+}

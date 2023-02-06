@@ -1,0 +1,32 @@
+@mixin btn-base {
+    background-color: $grey-light ;
+    border-radius: $border-radius;
+    padding: $btn-padding-v $btn-padding-h;
+}
+
+.container {
+    &-themeChange-btn {
+        @include btn-base();
+    }
+
+    &-controls {
+        &-load {
+            @include btn-base();
+            margin-right: $spacing;
+        } 
+        &-clear{
+            @include btn-base();
+        }
+    }
+    
+    &-displayTime-btn {
+        @include btn-base();
+    }
+}
+
+button {
+    @include btn-base();
+}
+
+
+

@@ -1,0 +1,47 @@
+.darkTheme{
+    background-color: $blue-dark;
+    color : $white;
+    border: 1px solid $white;
+}
+
+.dark {
+    @extend .darkTheme;
+
+    .container-controls-load {  
+        @extend .darkTheme;
+    }
+
+    .container-themeChange-btn{
+        @extend .darkTheme;    
+    }
+
+    .container-timeSelection select {
+        @extend .darkTheme;
+    }
+
+    .svg-fill {
+        fill:#fff;
+    }
+
+    .data-table{
+        color: $white;
+    }
+
+    tr:nth-child(even) {
+        background-color: $table-strip-color-light-2;
+        color: $black;
+    }
+    
+    tr:nth-child(odd) {
+        background-color: $table-strip-color-dark-2;
+        color: $white;
+    }
+    
+    tr:nth-child(1) {
+        background-color: #000000;
+        color: $white;
+    }
+
+
+
+}

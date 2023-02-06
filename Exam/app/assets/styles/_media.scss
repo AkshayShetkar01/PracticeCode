@@ -1,0 +1,65 @@
+@mixin flexCol {
+    flex-direction: column;
+}
+
+@mixin changeBtnFont () {
+    font-size: $font-size-sm;
+}
+
+
+@media only screen and (max-width: $media-sm) {
+   
+    .container {
+
+        font-size: $font-size-sm;
+
+        &-timeFormat-select {
+            @include flexCol();
+        }
+
+        &-themeChange-btn {
+            @include changeBtnFont();
+        }
+
+        &-controls {
+            @include flexCol();
+
+            div {
+                margin: $spacing-half auto;
+                width: $full-width;
+
+                button {
+                    width: $full-width;
+                    @include changeBtnFont();
+                }
+            }
+        }
+
+        &-timeSelection{
+            @include flexCol();
+
+            div {
+                margin: $spacing-half 0;
+            }
+        }
+
+        &-displayTime-btn{
+            @include changeBtnFont();
+        }
+
+
+        .load-btn {
+            @include changeBtnFont();;
+        }
+
+        &-data-table{
+         
+            th, td {
+                
+                padding: $tbl-padding-v $tbl-padding-h;
+            }
+        }
+
+    }
+ 
+}

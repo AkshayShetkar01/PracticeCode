@@ -1,0 +1,27 @@
+.data-table{
+    margin: 2rem 1rem;
+}
+
+table, th, td {
+    border: 1px solid #3b3b3b;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px 25px;
+}
+
+tr:nth-child(even) {
+    background-color: $table-strip-color-light;
+    color: $black;
+}
+
+tr:nth-child(odd) {
+    background-color: $table-strip-color-dark;
+    color: $white;
+}
+
+tr:nth-child(1) {
+    background-color: #000000;
+    color: $white;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.5.1/math.js"></script>
+    <link rel="stylesheet" href="./styles/css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-heading">
+            <h1>Scheduling Assistent</h1>
+        </div>
+        <div class="container-themeChange">
+            <button class="container-themeChange-btn" onclick="themeChange()">Change Theme</button>
+        </div>
+        <div class="container-timeFormat">
+            <span class="container-timeFormat-head">Time Format</span>
+            <div class="container-timeFormat-select">
+                <div>
+                    <input type="radio" name="timeFormat" id="twelveHours" value="12">
+                    <span>12 Hours</span>
+                </div>
+                <div>
+                    <input type="radio" name="timeFormat" id="twentyFourHours" value="24">
+                    <span>24 Hours</span>
+                </div>
+            </div>
+        </div>
+        <div class="container-controls">
+            <div>
+                <button class="container-controls-load" onclick="loadData()">Load</button>
+            </div>
+            <div>
+                <button class="container-controls-clear" onclick="clearData()">Clear</button>
+            </div>
+        </div>
+        <div class="container-timeSelection">
+            <div>
+                <span>Start Time</span>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="16" height="16" viewBox="0 0 16 16">
+                    <path class="svg-fill" fill="#000000"
+                        d="M10.293 11.707l-3.293-3.293v-4.414h2v3.586l2.707 2.707zM8 0c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zM8 14c-3.314 0-6-2.686-6-6s2.686-6 6-6c3.314 0 6 2.686 6 6s-2.686 6-6 6z">
+                    </path>
+                </svg>
+                <select name="startTime" id="start">
+                    <option value="">Please Select</option>
+                </select>
+            </div>
+            <div>
+                <span>End Time</span>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="16" height="16" viewBox="0 0 16 16">
+                    <path class="svg-fill" fill="#000000"
+                        d="M10.293 11.707l-3.293-3.293v-4.414h2v3.586l2.707 2.707zM8 0c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zM8 14c-3.314 0-6-2.686-6-6s2.686-6 6-6c3.314 0 6 2.686 6 6s-2.686 6-6 6z">
+                    </path>
+                </svg>
+                <select name="endTime" id="end">
+                    <option value="">Please Select</option>
+                </select>
+            </div>
+        </div>
+        <span id="msg"></span>
+        <div class="container-displayTime">
+            <button class="container-displayTime-btn" onclick="displaySchedule()">Display Selected Time</button>
+        </div>
+
+        <div class="container-getData">
+            <div class="loadData">
+                <button class="load-btn" onclick="fetchData()">Load data</button>
+            </div>
+            <span class="errorMsg"></span>
+            <div class="loading">
+                <div id="loader"></div>
+            </div>        
+            <div class="container-data-table">
+                <table id="customers" border="1px">
+
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+
+</html>

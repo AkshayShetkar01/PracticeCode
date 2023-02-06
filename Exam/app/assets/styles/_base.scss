@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'myFont';
+    src: url(../../font/Quicksand-Regular.otf);
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'myFont';
+}

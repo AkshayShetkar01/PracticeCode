@@ -1,0 +1,14 @@
+#msg{
+
+    margin: $spacing-half $spacing;
+    animation: trans 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes trans {
+    0%   {color:red}
+    25%  {color:yellow }
+    50%  {color:blue }
+    75%  {color:green }
+    100% {color:red }
+}
